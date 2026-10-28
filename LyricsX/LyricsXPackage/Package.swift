@@ -98,6 +98,11 @@ let package = Package(
                 .product(name: "FoundationToolbox", package: "FrameworkToolbox"),
             ]
         ),
+        // README 配图用的演示程序（swift run StageDemo）
+        .executableTarget(
+            name: "StageDemo",
+            dependencies: ["LyricsXFoundation"]
+        ),
         .testTarget(
             name: "LyricsXFoundationTests",
             dependencies: [

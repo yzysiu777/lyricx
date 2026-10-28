@@ -42,6 +42,12 @@ public struct StageSyllable: Hashable {
     public var text: String
     public var start: TimeInterval
     public var end: TimeInterval
+
+    public init(text: String, start: TimeInterval, end: TimeInterval) {
+        self.text = text
+        self.start = start
+        self.end = end
+    }
 }
 
 /// 一个「不可断开」的单位：英文是一个单词，中日韩是一个字。
@@ -50,6 +56,12 @@ public struct StageWord: Hashable, Identifiable {
     public var syllables: [StageSyllable]
     /// 词后面是否有空格（布局时用间距表示，避免尾随空格宽度不稳定）
     public var trailingSpace: Bool
+
+    public init(id: Int, syllables: [StageSyllable], trailingSpace: Bool) {
+        self.id = id
+        self.syllables = syllables
+        self.trailingSpace = trailingSpace
+    }
 
     public var text: String { syllables.map(\.text).joined() }
     public var start: TimeInterval { syllables.first?.start ?? 0 }
@@ -91,6 +103,18 @@ public struct StageLine: Identifiable, Hashable {
     public var background: String?
 
     public var isWordSynced: Bool { words != nil }
+
+    public init(id: Int, kind: Kind, start: TimeInterval, end: TimeInterval, text: String,
+                words: [StageWord]? = nil, translation: String? = nil, background: String? = nil) {
+        self.id = id
+        self.kind = kind
+        self.start = start
+        self.end = end
+        self.text = text
+        self.words = words
+        self.translation = translation
+        self.background = background
+    }
 }
 
 public struct StagePalette: Equatable {

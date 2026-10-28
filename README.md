@@ -4,6 +4,19 @@
 
 > 这是个人使用的非官方分支，与原作者和 MxIris-LyricsX-Project 无关。原版功能更全、支持更多播放器，需要的话请使用[原项目](https://github.com/MxIris-LyricsX-Project/LyricsX)。
 
+<table>
+  <tr>
+    <td align="center"><img src="docs/images/lyrics-compact.png" width="380" alt="歌词模式（小窗）"><br>歌词模式 · 小窗，逐字点亮 + 翻译</td>
+    <td align="center"><img src="docs/images/cover-landscape.png" width="380" alt="欣赏模式（横向）"><br>欣赏模式 · 横向小窗</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/images/lyrics-controls.png" width="380" alt="歌词模式（鼠标悬停）"><br>鼠标移入时显示控制按钮和进度条</td>
+    <td align="center"><img src="docs/images/cover-portrait.png" width="340" alt="欣赏模式（竖向）"><br>欣赏模式 · 竖向</td>
+  </tr>
+</table>
+
+<sub>配图由仓库里的演示程序生成（`cd LyricsX/LyricsXPackage && swift run StageDemo lyrics 340 280`），歌词是自编的示例句子，封面由程序绘制，不含任何受版权保护的内容。</sub>
+
 ## 和原版相比的变化
 
 **界面**
@@ -80,9 +93,11 @@ cd lyricx
 ```
 LyricsX/       App 本体（基于 MxIris-LyricsX-Project/LyricsX）
   LyricsXPackage/Sources/LyricsXFoundation/Stage/   新的歌词窗口界面（SwiftUI）
+  LyricsXPackage/Sources/StageDemo/                 生成 README 配图的演示程序
 LyricsKit/     歌词搜索与解析（基于 MxIris-LyricsX-Project/LyricsKit develop 分支）
 MusicPlayer/   播放器接口（MxIris-LyricsX-Project/MusicPlayer，未修改）
 scripts/       构建脚本
+docs/images/   README 配图
 ```
 
 本仓库基于以下上游版本：
