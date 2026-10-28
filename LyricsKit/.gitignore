@@ -1,0 +1,9 @@
+.swiftpm
+Sources/LyricsService/JSONModel/.DS_Store
+Sources/LyricsService/.DS_Store
+Sources/.DS_Store
+.DS_Store
+Package.resolved
+.claude
+.build
+.omc

@@ -1,0 +1,13 @@
+# 构建产物
+build/
+dist/
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.swiftpm/
+
+# 上游仓库的 git 记录（本地保留，便于对照上游更新）
+.upstream-git/
+
+.DS_Store

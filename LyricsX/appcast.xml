@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>LyricsX</title>
+        <description>Most recent changes with links to updates.</description>
+        <language>en</language>
+        <item>
+            <title>1.9.0-rc.1</title>
+            <pubDate>Tue, 27 Oct 2026 10:10:29 +0000</pubDate>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>10900201</sparkle:version>
+            <sparkle:shortVersionString>1.9.0-rc.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>What's New</h2>
+<h3>New</h3>
+<ul>
+<li>New Lyrics translation in Preferences → Lab fills in missing translations, using System Translation on macOS 26 or an OpenAI-compatible service.</li>
+<li>A Display language setting chooses which translation the desktop lyrics, the Apple Music-style lyrics window and the widget show.</li>
+<li>Lines in the Apple Music-style lyrics window respond to hovering and clicking as they do in Music.</li>
+</ul>
+<h3>Improvements</h3>
+<ul>
+<li>Unplayed lines and translations in the Apple Music-style lyrics window now look as they do in Music.</li>
+<li>The Apple Music-style lyrics window no longer keeps the Mac busy while paused or idle, and its background holds still while paused.</li>
+<li>Widgets follow the app's settings, including Prefer bilingual lyrics, instead of having options of their own.</li>
+<li>The large and extra-large widgets show as many whole lyric lines as fit.</li>
+<li>The widget's playback buttons no longer open the app.</li>
+<li>Widget lyrics change closer to when each line is sung.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>Lines without word timing now light up all at once in the Apple Music-style lyrics window instead of word by word.</li>
+<li>Fixed album artwork spilling out of the extra-large widget.</li>
+<li>Wrong Lyrics no longer deletes lyrics files you keep beside your music.</li>
+<li>Fixed Search Lyrics applying a different result than the one selected.</li>
+<li>Lyrics chosen in Search Lyrics or with Next Lyrics Candidate are no longer saved to a song that started playing in the meantime.</li>
+<li>Fixed rejected lyrics coming back, and lyrics in Music being rewritten, after a search was interrupted.</li>
+<li>Fixed a crash in the lyrics window when its font is no longer installed.</li>
+</ul>
+<h3>Acknowledgements</h3>
+<p>Thanks to @dongge0210 for (#204), which added lyrics translation through OpenAI-compatible services.</p>]]></description>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.9.0-rc.1/LyricsX_1.9.0-rc.1+10900201.zip" length="10676074" type="application/octet-stream" sparkle:edSignature="SM8MAURa+rG4gRTwUZAeZP+nvMuqHJMQpRrRcp2R2+7vh58sj0i+5Ha2TFzQSnTzWm6gY12eK18V7pThQXrdAg==" />
+        </item>
+        <item>
+            <title>1.9.0-beta.14</title>
+            <pubDate>Wed, 07 Oct 2026 12:01:31 +0000</pubDate>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>10900114</sparkle:version>
+            <sparkle:shortVersionString>1.9.0-beta.14</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>What's New</h2>
+<h3>Fixes</h3>
+<ul>
+<li>On macOS 26 and later, the menu bar lyrics no longer keep the CPU busy while the line sits still, and use less of it while scrolling.</li>
+<li>Songs playing in Spotify now show their cover in the lyrics panel.</li>
+<li>With Spotify, the lyrics panel no longer shows a nonsense remaining time or a progress bar stuck at the start, and lyrics search no longer misjudges the song's length.</li>
+</ul>
+<h3>Acknowledgements</h3>
+<p>Thanks to @SmallSquare for (#198), which tracked down the menu bar's CPU cost and was the basis for its fix.</p>]]></description>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.9.0-beta.14/LyricsX_1.9.0-beta.14+10900114.zip" length="10313348" type="application/octet-stream" sparkle:edSignature="QSpKSVaVwRg/rshbx6ach99HdCS/EbLHFJYTvBJpN852jjS/hfHBDTTpZYO66otNMImkDL8cIeYA28w+GMRmDQ==" />
+        </item>
+        <item>
+            <title>1.9.0-beta.13</title>
+            <pubDate>Mon, 28 Sep 2026 13:02:50 +0000</pubDate>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>10900113</sparkle:version>
+            <sparkle:shortVersionString>1.9.0-beta.13</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>What's New</h2>
+<h3>Fixes</h3>
+<ul>
+<li>The app and its widget crashed at launch on macOS 26.3 and earlier, caused by a mistake in Apple's SDK that labels a logging API added in macOS 26.4 as available since macOS 11.</li>
+<li>Clicking the elapsed or remaining time under the lyrics panel's progress bar no longer skips to the previous or next song.</li>
+</ul>
+<h3>Upgrading</h3>
+<ul>
+<li>If the previous beta does not open on your Mac, download this version from the release page and replace the app by hand, because the broken build cannot update itself.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.9.0-beta.13/LyricsX_1.9.0-beta.13+10900113.zip" length="10278086" type="application/octet-stream" sparkle:edSignature="VLZ6eNqUGNtf3UQsX7QgRbucnPfHH2z7RLKjs3t/EAxd1UOrSaZ55o+wX1swkTiYD5hStOqa1tCRCjubbXh9CA==" />
+        </item>
+        <item>
+            <title>1.9.0-beta.12</title>
+            <pubDate>Fri, 18 Sep 2026 02:25:35 +0000</pubDate>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>10900112</sparkle:version>
+            <sparkle:shortVersionString>1.9.0-beta.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>What's New</h2>
+<h3>New</h3>
+<ul>
+<li><strong>The Apple Music-style lyrics panel has been rebuilt against Music 26</strong> — the backdrop is now built from the cover art itself, line changes cascade one row after another, and type size steps at the same widths Music switches at.</li>
+<li><strong>Sung words rise syllable by syllable and stay risen</strong>, instead of every word swelling and dropping back. Applies to Apple Music lyrics and to the inline-timed results from Kugou, QQ Music and some NetEase sources.</li>
+<li><strong>The panel hides its title bar in full screen</strong>, so there is no black strip across the top any more.</li>
+<li><strong>A sharper cover in the panel.</strong> A higher-resolution copy of the same cover is looked up in the background, and only used once it is confirmed to be the same picture.</li>
+<li><strong>The lyrics search window shows the score it sorts by</strong>, with the cover-similarity bonus spelled out separately.</li>
+<li><strong>Apple Music lyrics keep their per-word timing</strong>, which the parser used to discard.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>A lyric long enough to wrap showed its second line above its first.</li>
+<li>Saturated cover art could wash the panel's background bright red.</li>
+<li>Word-timed lyrics lost their bounce on line changes.</li>
+<li>The karaoke sweep drifted out of alignment with the text during partial repaints.</li>
+<li>The panel no longer drags the whole system's frame rate down, or sits at 12% CPU with nothing playing.</li>
+<li>Playback control no longer starts a new process for every play, pause or state check.</li>
+</ul>
+<h3>Acknowledgements</h3>
+<p>Thanks to @garyyeap for (#192), the karaoke layout and vertical masking fix.</p>]]></description>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.9.0-beta.12/LyricsX_1.9.0-beta.12+10900112.zip" length="10194640" type="application/octet-stream" sparkle:edSignature="NWPzu+//mYav/BPoj6seGdr4ZrCScLJbgUQxGShoghTK80qxEr4TY+D75CCMvwS+XtOkAY0scoIa7UaS7I+HCA==" />
+        </item>
+        <item>
+            <title>1.9.0-beta.11</title>
+            <pubDate>Sun, 16 Aug 2026 12:05:44 +0000</pubDate>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>10900111</sparkle:version>
+            <sparkle:shortVersionString>1.9.0-beta.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>What's New</h2>
+<h3>New</h3>
+<ul>
+<li><strong>Switch to the next lyrics candidate</strong> — results that lose the automatic search are no longer thrown away; every result that clears the search filters now stays in a candidate pool. A new menu item and global shortcut cycle through it, so reaching a rejected candidate no longer means opening the search window and auditioning rows one by one. When the lyrics came from the local cache the pool is empty, so the first press starts a search and switches as soon as a genuinely different candidate arrives, rather than making you wait out a full search. A hand-picked choice is pinned and will not be yanked away by a high-scoring result landing seconds later.</li>
+<li><strong>Lyrics source ordering modes</strong> — the old "enable source priority" checkbox was all-or-nothing: with it on, any result from a higher-listed source beat any result from a lower one and the match score never got a say, so a barely-matching result with half the title right and the duration off by thirty seconds reliably outranked a perfect match from another source. There are now three modes: score only, source first, and a new one where the score leads and the source list only settles scores too close to tell apart. Existing setups migrate to the first two, so nothing reorders on upgrade; the third has to be chosen.</li>
+<li><strong>A switch to ignore the saved lyrics library</strong> — a cache hit short-circuits the entire search, so once a saved file is wrong it stays wrong forever. A new switch on the General page skips that one layer. Embedded lyrics, files sitting beside the track, and anything you picked by hand still come first — those are your files and your decisions, not a cache. A hand-picked choice is recorded inside the lyrics file itself, so it survives a new machine, a restored backup, or a reorganized library. When a search comes back empty the library is read after all, so being offline never drops you from possibly-stale lyrics to none at all.</li>
+<li><strong>Context menu in the lyrics window</strong> — adds Search and Edit. When lyrics are missing, Edit creates a blank lyrics file without overwriting any existing content.</li>
+<li><strong>The floating lyrics window follows you across Spaces.</strong></li>
+<li><strong>The settings toolbar now uses system symbols</strong> in place of the mix of legacy color icons and hand-drawn images.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>Several defects in the Apple Music-style lyrics panel: the karaoke sweep never painted, leaving the active line at its un-sung translucent white for the whole song; the non-active lines were dimmed on a distance ramp that was never the intended look, sinking the bottom of the panel into the background; per-character time tags made each character rise, hold and drop on its own instead of flowing as one phrase; and the line-change scroll was stepped by hand from the display link, so load on the panel's own main thread flattened the spring into a near-linear slide.</li>
+<li>Some playback sources briefly report a zero-time state when paused, which sent the desktop and floating lyrics back to the first line.</li>
+<li>The saving-path pop-up resolved its selection differently on the read and write sides, so lyrics were saved into a directory they were never read back from.</li>
+<li>User-owned lyrics files sitting next to a track are no longer rewritten unless you explicitly enable it in General settings.</li>
+<li>The login helper crashed after launching the main app, which made the system treat it as eligible for relaunch and restart it every few seconds — each restart re-opening the already-running app and popping up its settings window.</li>
+<li>The settings window is now sized from the selected tab's own content, so a tab no longer opens at a different size depending on which tab you came from.</li>
+<li>Filled in the missing translations for the lyrics window's context menu.</li>
+</ul>
+<h3>Acknowledgements</h3>
+<p>Thanks to @vizmoe, whose work ships in this update:</p>
+<ul>
+<li>(#179) keeping the floating lyrics window visible across Spaces</li>
+<li>(#181) the fix for lyrics jumping back to the first line on pause</li>
+<li>(#182) the Search/Edit context menu, and the storage change that keeps lyrics beside a track read-only by default</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.9.0-beta.11/LyricsX_1.9.0-beta.11+10900111.zip" length="9715959" type="application/octet-stream" sparkle:edSignature="CcQHKvDmzdg3ZemNde6CzowaHOS+NeJFKzqUAklEnRpPc/0Afcxjb0knEavxyu/Xg8qL/zWVkn81I/uegn9OAQ==" />
+        </item>
+        <item>
+            <title>1.8.9</title>
+            <pubDate>Sun, 19 Jul 2026 14:22:42 +0000</pubDate>
+            <sparkle:version>10809999</sparkle:version>
+            <sparkle:shortVersionString>1.8.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>What's New</h2>
+<h3>Fixes</h3>
+<ul>
+<li><strong>The preferences window no longer keeps popping up every few seconds</strong> — When "Launch &amp; Quit with Player" was enabled, the background helper crashed every time it tried to hand control back to the system, so macOS kept relaunching it, and every relaunch reopened the already-running app and pulled up the preferences window. The helper now exits cleanly and skips relaunching the app when it is already running.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.8.9/LyricsX_1.8.9+10809999.zip" length="8857029" type="application/octet-stream" sparkle:edSignature="6ebidJfn7dctiQ+WNJKc6G4mAAaSUFwX4apiTB5QtdOxR4bKpz3ihKD0Pu7ZMgbJ9hMlQJmpVGx4ptCRYBsNAA==" />
+        </item>
+        <item>
+            <title>1.9.0-beta.10</title>
+            <pubDate>Tue, 30 Jun 2026 16:23:26 +0000</pubDate>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>10900110</sparkle:version>
+            <sparkle:shortVersionString>1.9.0-beta.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>What's New</h2>
+<h3>New</h3>
+<ul>
+<li><strong>Apple Music lyrics source</strong> — LyricsX can now fetch lyrics from Apple Music. To use it, sign in to Apple Music in your browser, find the `media-user-token` value in the site's cookies, then paste that token into LyricsX preferences.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.9.0-beta.10/LyricsX_1.9.0-beta.10+10900110.zip" length="9534071" type="application/octet-stream" sparkle:edSignature="vjdUCkJvmayZnWR6BI6Vm37zFtgev+q/2HatGYBlG+2H6Z32WomE5Q+al/tY9wkrDIjAgeHRFF3r7OcY4VWBCg==" />
+        </item>
+        <item>
+            <title>1.9.0-beta.9</title>
+            <pubDate>Sun, 28 Jun 2026 12:31:16 +0000</pubDate>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>10900109</sparkle:version>
+            <sparkle:shortVersionString>1.9.0-beta.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>What's New</h2>
+<h3>New</h3>
+<ul>
+<li><strong>Opt in to prerelease builds</strong> — A new *Receive beta updates* switch under *Preferences → Updates* (off by default).</li>
+<li><strong>Apple Music style lyrics panel now works on macOS 12–14</strong> — Previously required macOS 15. The overall minimum supported macOS is now 12; users on macOS 11 will not receive this or later updates.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li><strong>Desktop lyrics no longer flicker about once a second</strong> — Affects Apple Music, Spotify and other scriptable players.</li>
+<li><strong>Karaoke fill and scrubber stay aligned with playback</strong> — No longer drift or reset on pause/resume.</li>
+<li><strong>Pause/resume on the system Now Playing source no longer drifts lyrics</strong> — No backward jump on pause; no forward drift on resume.</li>
+<li><strong>Apple Music style panel reopens at its last size and position</strong> — No longer jumps back to the default frame.</li>
+<li><strong>Apple Music style panel has a minimum window size</strong> — Can no longer be shrunk into an unreadable strip.</li>
+<li><strong>Transport buttons now show hover feedback</strong> — Play / previous / next highlight when hovered.</li>
+<li><strong>Artwork-based lyric matching no longer rejects the correct cover</strong> — A too-strict brightness check has been relaxed.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.9.0-beta.9/LyricsX_1.9.0-beta.9+10900109.zip" length="9374898" type="application/octet-stream" sparkle:edSignature="JAlHHOQ9huiZz1kxblk/jQ4l8jCbt4Eml+xMSnZ9lEEg2kDE+CpcM8AbEfV7yVMf2b54wS1bj0E40WEMPaJhDg==" />
+        </item>
+        <item>
+            <title>1.8.8</title>
+            <pubDate>Sun, 21 Jun 2026 16:11:39 +0000</pubDate>
+            <sparkle:version>2933</sparkle:version>
+            <sparkle:shortVersionString>1.8.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>What's New</h2>
+<h3>Fixes</h3>
+<ul>
+<li><strong>Auto-launch with your music player now works again</strong> — On some macOS versions the app failed to start automatically when a music player was launched. Fixed.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.8.8/LyricsX_1.8.8+2933.zip" length="8858478" type="application/octet-stream" sparkle:edSignature="SYV2/cxYtSU0Cte2+ELsYGv3lfld5VygU1Fwi8GvaN0ucg1l2TiVd/ehCvN/KEw7cowIY7Sn9+5r12fTxDHiBQ==" />
+        </item>
+        <item>
+            <title>1.8.6</title>
+            <pubDate>Sun, 21 Jun 2026 01:19:25 +0000</pubDate>
+            <sparkle:version>2921</sparkle:version>
+            <sparkle:shortVersionString>1.8.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>LyricsX 1.8.6 What's New</h2>
+<h3>Fixes</h3>
+<ul>
+<li><strong>Fixed desktop lyrics flickering</strong> — The desktop line-by-line lyrics no longer flicker about once a second during playback (an issue that could also trigger a brief line-change-like animation). Lyrics now track playback smoothly again.</li>
+</ul>
+<h3>System Requirements</h3>
+<ul>
+<li>Minimum requirement: <strong>macOS 10.15 (Catalina)</strong></li>
+</ul>]]></description>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.8.6/LyricsX_1.8.6+2921.zip" length="8849995" type="application/octet-stream" sparkle:edSignature="Q6bJjH7+8c2JDNxZDYf5qF+BCehcBDuHpcR/hVNWfhCrdJH89CXIY/j1Gn/zi8kzl8UFJYpzO61CS8/CB9JRBw==" />
+        </item>
+        <item>
+            <title>1.8.5</title>
+            <pubDate>Fri, 15 May 2026 01:16:47 +0000</pubDate>
+            <sparkle:version>2920</sparkle:version>
+            <sparkle:shortVersionString>1.8.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <description><![CDATA[# LyricsX 1.8.5 What's New
+
+## Fixes
+
+- **Fixed startup crash on macOS 10.15 (Catalina)** — Resolved an issue that caused LyricsX to crash on launch on macOS 10.15.
+
+## System Requirements
+
+- Minimum requirement: **macOS 10.15 (Catalina)**]]></description>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.8.5/LyricsX_1.8.5+2920.zip" length="8849837" type="application/octet-stream" sparkle:edSignature="PCRmaOzUw/DMqyPFbZwekaLsGlINu3rcj6KJiTq5rnyMDrkHki1r9+h4NGvKd1UtjKkQVXDW2nrypmG2kg/TAg==" />
+        </item>
+        <item>
+            <title>1.8.3</title>
+            <pubDate>Thu, 14 May 2026 04:15:17 +0000</pubDate>
+            <sparkle:version>2917</sparkle:version>
+            <sparkle:shortVersionString>1.8.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <description><![CDATA[# LyricsX 1.8.3 What's New
+
+## New Features
+
+- **macOS 10.15 (Catalina) support restored** — LyricsX 1.8.3 once again runs on macOS 10.15. **Note: 1.8.3 is expected to be the final release that supports 10.15; future versions may drop it.**
+- **NowPlaying support for iOS apps on Mac** — Now-playing detection now correctly identifies iOS apps running on Apple Silicon Macs as a NowPlaying source.
+
+## Fixes
+
+- **Fixed "Launch with Player" no longer triggering** — After upgrading, please toggle the "Launch with Player" preference off and on again to re-arm the helper.
+
+## Other Changes
+
+- **Main app no longer sandboxed** — Upcoming features cannot run inside the App Sandbox, so the main app has dropped the sandbox entitlement. LyricsX is fully open source — you can audit the entire codebase at https://github.com/MxIris-LyricsX-Project/LyricsX.
+
+## System Requirements
+
+- Minimum requirement: **macOS 10.15 (Catalina)**]]></description>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.8.3/LyricsX_1.8.3+2917.zip" length="8770934" type="application/octet-stream" sparkle:edSignature="w4o7hurtvKkteizbLf2+AluxClIf5lrwcPG+Up1YAiSpZYAr1wEc46GOhLRLZ+UPkQ2+xM3kwsDidOcOUHfWBw==" />
+        </item>
+        <item>
+            <title>1.8.2</title>
+            <description><![CDATA[<ul>
+  <li>Fix NowPlaying whitelist not working.</li>
+</ul>
+]]></description>
+            <pubDate>Mon, 04 May 2026 17:29:46 +0800</pubDate>
+            <sparkle:version>2910</sparkle:version>
+            <sparkle:shortVersionString>1.8.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.8.2/LyricsX_1.8.2+2910.zip" length="8623492" type="application/octet-stream" sparkle:edSignature="r6BZXiwxQfiJXMbCnUxQh/0Qo7S25/pEFNOnXG1unK2mZmbrNgHS36//vsPaPclCJVq/I5PRyGIbNyNssYLnDg==" />
+        </item>
+        <item>
+            <title>1.8.1</title>
+            <pubDate>Fri, 03 Apr 2026 23:16:51 +0800</pubDate>
+            <sparkle:version>2908</sparkle:version>
+            <sparkle:shortVersionString>1.8.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.8.1/LyricsX_1.8.1+2908.zip" length="8579366" type="application/octet-stream" sparkle:edSignature="ZdvCjlTS1I0REh548mkjWiOkHELP9vBHi8d2H5iecpYwtutoLlNh40M85zk8rQpHBRmG1ThToTizt7cf4zvuBA==" />
+        </item>
+        <item>
+            <title>1.8.0</title>
+            <pubDate>Sat, 21 Mar 2026 14:33:49 +0800</pubDate>
+            <sparkle:version>2908</sparkle:version>
+            <sparkle:shortVersionString>1.8.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.8.0/LyricsX.2026-03-21.12-32-44.zip" length="8586110" type="application/octet-stream" sparkle:edSignature="zd2DSKl3XQ4SyPpdHwtb3S3lZfDyUJdZfl3VB9SLCEano6EfEbZgkWqEwRTavxWZtLgw4NIg9IJHAYJlwb6tDw==" />
+        </item>
+        <item>
+            <title>1.7.4</title>
+            <pubDate>Thu, 13 Feb 2025 22:24:13 +0800</pubDate>
+            <sparkle:version>2563</sparkle:version>
+            <sparkle:shortVersionString>1.7.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.7.4/LyricsX_1.7.4+2563.zip" length="5746309" type="application/octet-stream" sparkle:edSignature="kNa/cGLbEHQ0inweVBNbI5yCOVIqSD+wb3mC9lOHn2cO1hYBSv7n8vk1QhrYJUoVldl8LXM1GukTX4QCGAf3AA==" />
+        </item>
+        <item>
+            <title>1.7.3</title>
+            <pubDate>Sun, 02 Feb 2025 13:36:47 +0800</pubDate>
+            <sparkle:version>2501</sparkle:version>
+            <sparkle:shortVersionString>1.7.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.7.3/LyricsX_1.7.3+2501.zip" length="5745458" type="application/octet-stream" sparkle:edSignature="HghcAIJQOkgz6nIH1ld2+uygKOG+pA4P0JBGA3tAf1uLrSaxrXCjv2AxGvnwHgRDztORrbOAs6VLg4gANrK6Aw==" />
+        </item>
+        <item>
+            <title>1.7.2</title>
+            <pubDate>Sun, 02 Feb 2025 12:49:58 +0800</pubDate>
+            <sparkle:version>2501</sparkle:version>
+            <sparkle:shortVersionString>1.7.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.7.2/LyricsX-1.7.2.zip" length="5762001" type="application/octet-stream" sparkle:edSignature="HHNRsmWIMi8LAduU+1J8rH/oBvjc9YcDkYUBLHijXctloymRvO0jXJkl9zRy233C1U2kkZWndFYkGqf/yu2RAg==" />
+        </item>
+        <item>
+            <title>1.7.1</title>
+            <pubDate>Mon, 07 Oct 2024 17:03:21 +0800</pubDate>
+            <sparkle:version>2468</sparkle:version>
+            <sparkle:shortVersionString>1.7.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v1.7.1/LyricsX_1.7.1+2468.zip" sparkle:version="2468" sparkle:shortVersionString="1.7.1" length="5897679" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>1.6.3</title>
+            <description><![CDATA[<ul>
+  <li>Fix NetEase lyrics source (#527). Thanks to @hguandl !</li>
+</ul>
+]]></description>
+            <pubDate>Fri, 29 Apr 2022 11:27:18 +0000</pubDate>
+            <enclosure url="https://github.com/ddddxxx/LyricsX/releases/download/v1.6.3/LyricsX_1.6.3%2B2351.zip" sparkle:version="2351" sparkle:shortVersionString="1.6.3" length="15169874" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>1.6.1</title>
+            <description><![CDATA[<ul>
+  <li>Add Indonesian, Italian and Dutch support. Thanks to Muhammad Fauzi, cencio1952, Zara Drechsler and everyone participated in the translation!</li>
+  <li>Lyrics filter with regex now works as expected. (#468)</li>
+  <li>Fix a bug where LyricsX failed to read local lyrics with “:” or “/” in the file name.</li>
+  <li>Fix layout issue of karaoke lyrics. (#477)</li>
+</ul>
+]]></description>
+            <pubDate>Mon, 31 May 2021 10:52:44 +0000</pubDate>
+            <enclosure url="https://github.com/ddddxxx/LyricsX/releases/download/v1.6.1/LyricsX_1.6.1%2B2341.zip" sparkle:version="2341" sparkle:shortVersionString="1.6.1" length="15279607" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>1.6.0</title>
+            <description><![CDATA[<ul>
+  <li>New icon.</li>
+  <li>LyricsX is now a universal app.</li>
+</ul>
+]]></description>
+            <pubDate>Thu, 14 Jan 2021 05:54:26 +0000</pubDate>
+            <enclosure url="https://github.com/ddddxxx/LyricsX/releases/download/v1.6.0/LyricsX_1.6.0%2B2334.zip" sparkle:version="2334" sparkle:shortVersionString="1.6.0" length="19151991" type="application/octet-stream" />
+        </item>
+    </channel>
+</rss>
