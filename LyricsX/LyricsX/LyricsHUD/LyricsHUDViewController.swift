@@ -210,6 +210,9 @@ final class LyricsStageWindowController: NSWindowController, NSWindowDelegate {
         }
         model.sizePreset = Self.currentPreset()
         installDragMonitor()
+        installHoverTracking()
+        // 窗口不可缩放，绿色按钮永远是灰的，直接隐藏
+        window.standardWindowButton(.zoomButton)?.isHidden = true
 
         configureModel()
         bindData()
@@ -431,8 +434,27 @@ final class LyricsStageWindowController: NSWindowController, NSWindowDelegate {
         if announce { model.showToast(pinned ? "窗口已置顶" : "已取消置顶") }
     }
 
+    /// 在整个窗口框架（含标题栏和红绿灯按钮）上跟踪鼠标进出
+    private func installHoverTracking() {
+        guard let frameView = window?.contentView?.superview else { return }
+        frameView.addTrackingArea(NSTrackingArea(
+            rect: .zero,
+            options: [.mouseEnteredAndExited, .activeAlways, .inVisibleRect],
+            owner: self,
+            userInfo: nil
+        ))
+    }
+
+    override func mouseEntered(with event: NSEvent) {
+        model.isHoveringWindow = true
+    }
+
+    override func mouseExited(with event: NSEvent) {
+        model.isHoveringWindow = false
+    }
+
     private func setTrafficLightsVisible(_ visible: Bool) {
-        let buttons: [NSWindow.ButtonType] = [.closeButton, .miniaturizeButton, .zoomButton]
+        let buttons: [NSWindow.ButtonType] = [.closeButton, .miniaturizeButton]
         NSAnimationContext.runAnimationGroup { ctx in
             ctx.duration = 0.2
             for type in buttons {

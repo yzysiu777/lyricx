@@ -40,7 +40,8 @@ public struct StageRootView: View {
         }
         .environment(\.colorScheme, .dark)
         .animation(.easeInOut(duration: 0.4), value: model.mode)
-        .onHover { model.isHoveringWindow = $0 }
+        // 鼠标进出由窗口控制器在整个窗口框架（含标题栏按钮）上判断，
+        // 不能用 .onHover：鼠标移到红绿灯上时 SwiftUI 会误判为「离开窗口」
         .onDrop(of: [.fileURL], isTargeted: nil, perform: handleDrop)
         .focusable()
         .focusEffectDisabled()
