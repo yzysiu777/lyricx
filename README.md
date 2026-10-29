@@ -58,6 +58,21 @@
   - 自动更新（避免被上游版本覆盖）。
 - 菜单栏图标只保留常用操作。
 
+## 安装
+
+到 [Releases](https://github.com/yzysiu777/lyricx/releases/latest) 下载 `lyricx-x.y.z.dmg`。Apple 芯片和 Intel 的 Mac 都能用，需要 macOS 14 以上。
+
+1. 打开 DMG，把 LyricsX 拖进 Applications 文件夹。
+2. 本项目没有经过 Apple 公证，第一次打开会被系统拦下。打开「系统设置 → 隐私与安全性」，在页面底部点「仍要打开」。也可以在终端运行：
+   ```bash
+   xattr -dr com.apple.quarantine /Applications/LyricsX.app
+   ```
+3. 系统询问是否允许 LyricsX 控制「音乐」时，选择允许。
+
+LyricsX 运行后只在菜单栏显示一个图标，歌词窗口从菜单栏图标里打开。
+
+> 注意：本 App 和原版 LyricsX 使用相同的 Bundle ID，安装后会替换原版，原版的设置会继续沿用。
+
 ## 构建
 
 需要 macOS 14 以上和 Xcode 16 以上，不需要 Apple 开发者账号（构建脚本使用 ad-hoc 签名）。
@@ -68,7 +83,7 @@ cd lyricx
 ./scripts/build.sh
 ```
 
-构建产物在 `dist/LyricsX.app`，拖进「应用程序」文件夹即可。第一次运行时，系统会请求控制「音乐」App 的权限，请允许。
+构建产物在 `dist/LyricsX.app`，拖进「应用程序」文件夹即可。运行 `./scripts/package-dmg.sh` 可以打包通用版（Apple 芯片 + Intel）的 DMG。第一次运行时，系统会请求控制「音乐」App 的权限，请允许。
 
 和原版相比，为了能在本地构建，做了这些改动：
 

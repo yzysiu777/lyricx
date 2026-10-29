@@ -5,9 +5,15 @@ ROOT="${0:A:h:h}"
 cd "$ROOT/LyricsX"
 export LYRICSX_SKIP_BUILD_BUMP=1
 mkdir -p "$ROOT/build"
+# UNIVERSAL=1 时同时编译 Apple 芯片和 Intel（发布用）；默认只编译本机架构，更快
+if [ "${UNIVERSAL:-0}" = "1" ]; then
+  ARCH_FLAGS=(ONLY_ACTIVE_ARCH=NO "ARCHS=arm64 x86_64")
+else
+  ARCH_FLAGS=(ONLY_ACTIVE_ARCH=YES)
+fi
 xcodebuild -project LyricsX.xcodeproj -scheme LyricsX -configuration "${CONFIG:-Release}" \
   -derivedDataPath "$ROOT/build" -skipMacroValidation -skipPackagePluginValidation \
-  ONLY_ACTIVE_ARCH=YES build "$@" | tee "$ROOT/build/last-build.log" | grep -E "error:|warning: .*LyricsX/|BUILD (SUCCEEDED|FAILED)" || true
+  "${ARCH_FLAGS[@]}" build "$@" | tee "$ROOT/build/last-build.log" | grep -E "error:|warning: .*LyricsX/|BUILD (SUCCEEDED|FAILED)" || true
 APP="$ROOT/build/Build/Products/${CONFIG:-Release}/LyricsX.app"
 grep -q "BUILD SUCCEEDED" "$ROOT/build/last-build.log" || { echo "构建失败，看 build/last-build.log"; exit 1; }
 rm -rf "$ROOT/dist" && mkdir -p "$ROOT/dist" && cp -R "$APP" "$ROOT/dist/"
