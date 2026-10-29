@@ -89,6 +89,8 @@ private struct LyricsModeView: View {
                         .padding(.trailing, 12)
                         .padding(.bottom, 2)
                         .animation(.spring(response: 0.35, dampingFraction: 0.85), value: model.isHoveringWindow)
+                        // 标题栏永远压在歌词上面：上方几句歌词的位置会延伸到这里，否则会抢走按钮的点击
+                        .zIndex(1)
 
                     if model.lines.isEmpty {
                         EmptyLyricsView(model: model, compact: compact)
@@ -96,6 +98,9 @@ private struct LyricsModeView: View {
                     } else {
                         StageLyricsColumn(model: model, fontSize: fontSize, anchorRatio: compact ? 0.36 : 0.3)
                             .padding(.horizontal, 6)
+                            // 歌词只在自己的区域内可点
+                            .clipped()
+                            .contentShape(Rectangle())
                     }
                 }
 
@@ -114,6 +119,7 @@ private struct LyricsModeView: View {
                             .allowsHitTesting(false)
                     )
                     .opacity(showChrome ? 1 : 0)
+                    .allowsHitTesting(showChrome)
                     .offset(y: showChrome ? 0 : 12)
                     .animation(.easeOut(duration: 0.25), value: showChrome)
                 }
@@ -146,6 +152,7 @@ private struct StageHeader: View {
             Spacer(minLength: 8)
             StageControls(model: model)
                 .opacity(model.isHoveringWindow ? 1 : 0)
+                .allowsHitTesting(model.isHoveringWindow)
                 .animation(.easeOut(duration: 0.2), value: model.isHoveringWindow)
         }
     }
@@ -262,6 +269,7 @@ private struct CoverModeView: View {
                 .padding(.top, 8)
                 .padding(.trailing, 10)
                 .opacity(model.isHoveringWindow ? 1 : 0)
+                .allowsHitTesting(model.isHoveringWindow)
                 .animation(.easeOut(duration: 0.2), value: model.isHoveringWindow)
         }
     }
@@ -336,6 +344,7 @@ private struct CoverModeView: View {
                     .padding(.top, 10)
                     .padding(.trailing, 14)
                     .opacity(model.isHoveringWindow ? 1 : 0)
+                .allowsHitTesting(model.isHoveringWindow)
                     .animation(.easeOut(duration: 0.2), value: model.isHoveringWindow)
             }
         }
